@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.DuckDuckGoSearch</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/duckduckgosearch</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>DuckDuckGo Search is a simple tool for searching DuckDuckGo. It returns the search results from DuckDuckGo.</Description>
+    <RepositoryUrl>https://github.com/apiverve/duckduckgosearch-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>duckduckgo search; duckduckgo search api; duckduckgo search tool; duckduckgo search software; duckduckgo search service; duckduckgo search library; duckduckgo search sdk; duckduckgo search code; duckduckgo search script; duckduckgo search program; duckduckgo search application; duckduckgo search app; duckduckgo search utility; duckduckgo search helper; duckduckgo search helper tool; duckduckgo search helper software; duckduckgo search helper service; duckduckgo search helper library; duckduckgo search helper sdk; duckduckgo search helper code; duckduckgo search helper script; duckduckgo search helper program; duckduckgo search helper application; duckduckgo search helper app; duckduckgo search helper utility; duckduckgo search helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
