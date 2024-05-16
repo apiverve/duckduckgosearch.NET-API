@@ -82,7 +82,7 @@ var response = apiClient.Execute(queryOptions);
 if(response.error != null) {
 	Console.WriteLine(response.error);
 } else {
-    var jsonResponse = JsonConvert.SerializeObject(response.data, Newtonsoft.Json.Formatting.Indented);
+    var jsonResponse = JsonConvert.SerializeObject(response, Newtonsoft.Json.Formatting.Indented);
     Console.WriteLine(jsonResponse);
 }
 ```
@@ -110,12 +110,7 @@ if(response.error != null) {
       {
         "title": "What is Computer Science? - Codecademy",
         "url": "https://www.codecademy.com/resources/blog/what-is-computer-science/",
-        "description": "Learn the basics of computer science, a field that covers everything from artificial intelligence and data science to robotics and cybersecurity. Find out how to get started, what careers are available, and how to prepare for a computer science career with courses from Codecademy."
-      },
-      {
-        "title": "CS50: Introduction to Computer Science | Harvard Online Course",
-        "url": "https://www.harvardonline.harvard.edu/course/cs50-introduction-computer-science",
-        "description": "Learn the intellectual enterprises and art of programming with an online course from Harvard University. Topics include abstraction, algorithms, data structures, security, software engineering, and web development. Languages include C, Python, SQL, JavaScript, CSS, and HTML. Earn a certificate or audit the course for free."
+        "description": "Learn what computer science is, why it's important, and how to get started. Explore various roles in the field, from front-end and back-end engineering to data science and cybersecurity, and find out how to prepare with courses and projects."
       },
       {
         "title": "Computer science | Definition, Types, &amp; Facts | Britannica",
@@ -123,14 +118,19 @@ if(response.error != null) {
         "description": "Learn about the study of computers and computing, including their theoretical and algorithmic foundations, hardware and software, and their uses for processing information. Explore the history, subfields, and applications of computer science, as well as its interdisciplinary connections with other fields."
       },
       {
+        "title": "CS50: Introduction to Computer Science | Harvard Online Course",
+        "url": "https://www.harvardonline.harvard.edu/course/cs50-introduction-computer-science",
+        "description": "Learn the basics of computer science and programming in C, Python, SQL, and JavaScript with CS50x, Harvard's largest course. This self-paced course is open to all levels of experience and offers a certificate for a passing grade."
+      },
+      {
         "title": "CS50: Introduction to Computer Science | Harvard University",
         "url": "https://pll.harvard.edu/course/cs50-introduction-computer-science",
-        "description": "A free online course that introduces the intellectual enterprises of computer science and the art of programming. Learn how to think algorithmically and solve problems efficiently with topics like abstraction, algorithms, data structures, encapsulation, security, software engineering, and web development. Familiarize yourself with languages like C, Python, SQL, and JavaScript plus CSS and HTML."
+        "description": "Learn the basics of computer science and programming with CS50x, a self-paced online course from Harvard. Explore topics like algorithms, data structures, web development, and more with C, Python, SQL, and JavaScript."
       },
       {
         "title": "HarvardX: CS50&#x27;s Introduction to Computer Science | edX",
         "url": "https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science",
-        "description": "Learn the basics of computer science and programming with Harvard University's CS50x course. Explore topics like algorithms, data structures, security, web development, and more with C, Python, SQL, and JavaScript."
+        "description": "Learn the basics of computer science and programming with C, Python, SQL, and JavaScript plus CSS and HTML. This self-paced course is for beginners and majors, and offers a certificate for satisfactory performance on problem sets and a final project."
       },
       {
         "title": "CS50: Computer Science Courses and Programs from Harvard",
@@ -138,19 +138,14 @@ if(response.error != null) {
         "description": "Learn computer science, mobile app and game development, business technologies, and the art of programming with CS50, the largest course on the Harvard campus. Explore introductory CS50 courses and Professional Certificate programs from Harvard that are open to learners of all backgrounds."
       },
       {
-        "title": "Computer science theory | Computing | Khan Academy",
-        "url": "https://www.khanacademy.org/computing/computer-science",
-        "description": "Learn select topics from computer science, such as algorithms, cryptography, and information theory, with interactive exercises and videos. Explore the history and applications of these concepts in various fields and contexts."
-      },
-      {
-        "title": "Computer science - Latest research and news | Nature",
-        "url": "https://www.nature.com/subjects/computer-science",
-        "description": "Computer science is the study and development of the protocols required for automated processing and manipulation of data. This includes, for example, creating algorithms for efficiently searching ..."
-      },
-      {
         "title": "Harvard CS50 - Full Computer Science University Course",
         "url": "https://www.youtube.com/watch?v=8mAITcNt710",
         "description": "Learn the basics of computer science from Harvard University. This is CS50, an introduction to the intellectual enterprises of computer science and the art o..."
+      },
+      {
+        "title": "Computer science theory | Computing | Khan Academy",
+        "url": "https://www.khanacademy.org/computing/computer-science",
+        "description": "Learn select topics from computer science, such as algorithms, cryptography, and information theory, with interactive exercises and videos. Explore the history and applications of these concepts in various fields and contexts."
       },
       {
         "title": "Computer Science - Harvard University",
@@ -158,9 +153,29 @@ if(response.error != null) {
         "description": "The concentration in Computer Science is designed to teach students skills and ideas they will use immediately and in the future. Because information technology affects every aspect of society, graduates with computer science degrees have open to them an enormous variety of careers—engineering, teaching, medicine, law, basic science, entertainment, management, and countless others."
       },
       {
+        "title": "Computer science - Latest research and news | Nature",
+        "url": "https://www.nature.com/subjects/computer-science",
+        "description": "Computer science is the study and development of the protocols required for automated processing and manipulation of data. This includes, for example, creating algorithms for efficiently searching ..."
+      },
+      {
         "title": "Best Online Computer Science Courses and Programs - edX",
         "url": "https://www.edx.org/learn/computer-science",
-        "description": "Learn computer science with online courses and programs from top universities and institutions. Explore topics such as coding, data science, artificial intelligence, and more."
+        "description": "Learn computer science with online courses and programs from top universities on edX. Explore topics such as algorithms, artificial intelligence, data science, and more."
+      },
+      {
+        "title": "Code a New Career | ComputerScience.org",
+        "url": "https://www.computerscience.org/",
+        "description": "Once you've earned this computer science degree, you'll be ready to apply your knowledge and skills to design, develop, and optimize systems that can meet current and future industry needs. Take a hands-on, scientific approach to IT. Learn programming languages and architecture along with theory, application, & ethics."
+      },
+      {
+        "title": "Best Computer Science Courses Online [2024] | Coursera",
+        "url": "https://www.coursera.org/browse/computer-science",
+        "description": "Explore the best online courses and degrees in computer science from top universities and institutions. Learn programming, data analytics, cybersecurity, AI, and more with Coursera."
+      },
+      {
+        "title": "What is Computer Science? | School of Computer Science",
+        "url": "https://www.scs.gatech.edu/what-computer-science",
+        "description": "Georgia Tech's School of Computer Science is home to a group of faculty and researchers with breadth and strength in all aspects of the computational process—from the algorithms to the architecture, from theory to networking, from system design to the programming environments to databases. At Georgia Tech, we make computing better, now and ..."
       },
       {
         "title": "What to Know About Becoming a Computer Science Major",
@@ -168,49 +183,34 @@ if(response.error != null) {
         "description": "Computer science is a major for problem-solving students who want to learn how to use computers and computational processes to build websites, program robots, mine data and more."
       },
       {
-        "title": "Best Computer Science Courses Online [2024] | Coursera",
-        "url": "https://www.coursera.org/browse/computer-science",
-        "description": "Learn computer science from top universities and industry experts on Coursera. Explore topics like software development, algorithms, cybersecurity, data science, and more. Earn certificates, degrees, or prepare for industry exams."
+        "title": "Computer Science Guide | BestColleges",
+        "url": "https://www.bestcolleges.com/computer-science/what-is-computer-science/",
+        "description": "Learn what computer science is, what skills are needed, and what careers are available in this field. Find out the job demand, salary, and specializations for computer science professionals."
       },
       {
         "title": "Computing | Khan Academy",
         "url": "https://www.khanacademy.org/computing",
-        "description": "Khan Academy offers free online courses and resources on various topics in computing, from introductory programming to advanced algorithms and data structures. Explore the fundamentals of computer science, the internet, AI, blockchain, and more with interactive lessons and exercises."
+        "description": "Explore various topics in computing, from programming languages and web development to algorithms and data structures. Learn with interactive lessons, videos, exercises and projects on Khan Academy."
       },
       {
         "title": "What is Computer Science? | Undergraduate Computer Science at UMD",
         "url": "https://undergrad.cs.umd.edu/what-computer-science",
-        "description": "Computer Science is the study of computers and computational systems, including software, hardware, and applications. Learn about the principal areas of study, the skills and knowledge graduates need, and the career opportunities in this field from the Undergraduate Computer Science Department at UMD."
-      },
-      {
-        "title": "What Is a Computer Science Degree? | Coursera",
-        "url": "https://www.coursera.org/articles/what-is-computer-science-degree",
-        "description": "Learn about the benefits and options of getting a computer science degree, from associate to doctoral level. Explore common concentrations, in-demand careers, and salary expectations in the field of CS."
-      },
-      {
-        "title": "Computer Science - MIT EECS - Massachusetts Institute of Technology",
-        "url": "https://www.eecs.mit.edu/research/computer-science/",
-        "description": "Learn about the theory and practice of computer science, from algorithms and systems to AI and human-computer interaction. Explore the subareas of computer science research at MIT EECS, such as AI for healthcare, machine learning, communications, educational technology, and more. Discover the latest news and events related to computer science at MIT."
+        "description": "Computer Science is the study of computers and computational systems, including their theory, design, development, and application. Learn about the principal areas of Computer Science, such as artificial intelligence, security, database systems, and more."
       },
       {
         "title": "Computer Science | Harvard John A. Paulson School of Engineering and ...",
         "url": "https://seas.harvard.edu/computer-science",
-        "description": "Learn about the computer science programs and research areas at the Harvard John A. Paulson School of Engineering and Applied Sciences. Explore the interdisciplinary initiatives and diversity goals of the department."
+        "description": "Learn about the computer science program at Harvard John A. Paulson School of Engineering and Applied Sciences. Explore the areas of study, interdisciplinary initiatives, and leadership of the department."
       },
       {
-        "title": "Computer Science",
-        "url": "https://www.cs.stanford.edu/",
-        "description": "Our main educational goal is to prepare students for a rapidly changing world. Undergraduate students have the option of declaring a Bachelor of Science or a Minor in Computer Science. Graduate students have the opportunity to pursue a Master's or PhD degree in Computer Science. The Master's degree is a terminal professional degree."
-      },
-      {
-        "title": "Best Computer Science Programs - U.S. News &amp; World Report",
-        "url": "https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings",
-        "description": "Ranked in 2024, part of Best Science Schools. Earning a graduate degree in computer science can lead to positions in research institutions, government agencies, technology companies and colleges ..."
+        "title": "Computer Science - MIT EECS - Massachusetts Institute of Technology",
+        "url": "https://www.eecs.mit.edu/research/computer-science/",
+        "description": "Explore the subareas of computer science, from theory to systems to human-computer interaction, and how they drive interdisciplinary collaboration at MIT. Learn about the latest news and events in this field, from AI for healthcare to quantum computing."
       },
       {
         "title": "What is Computer Science? | Michigan Technological University",
         "url": "https://www.mtu.edu/cs/what/",
-        "description": "Computer science is the foundation of all computing disciplines, including machine learning, natural language processing, security, and more. Learn about the careers, skills, and future of computer science at Michigan Tech, a college dedicated to computing education and research."
+        "description": "Learn about computer science as a broad and innovative field that includes software, hardware, and human-computer interaction. Explore the career opportunities, skills, and research in computer science at Michigan Tech, a leading college in computing education."
       }
     ]
   }
